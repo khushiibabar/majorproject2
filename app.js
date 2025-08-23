@@ -50,7 +50,7 @@ app.use(express.static(path.join(__dirname, "public")));
 const store = MongoStore.create({
   mongoUrl: dbUrl,
   crypto: {
-    secret: "mysupersecret",
+    secret: process.env.SECRET,
   },
   touchAfter: 24 * 3600,
 });
@@ -62,7 +62,7 @@ store.on("error", (err) => {
 //session
 const sessionOptions = {
   store,
-  secret: "mysupersecret",
+  secret: process.env.SECRET,
   resave: false,
   saveUninitialized: true,
   cookie: {
@@ -82,9 +82,9 @@ passport.use(new LocalStrategy(User.authenticate()));
 passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 
-app.get("/", (req, res) => {
-  res.send("Hi I am root.");
-});
+// app.get("/", (req, res) => {
+//   res.send("Hi I am root.");
+// });
 
 app.use((req, res, next) => {
   res.locals.success = req.flash("success");
