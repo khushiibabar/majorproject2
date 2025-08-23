@@ -1,0 +1,137 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.container {
+  flex: 1;
+}
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+/* d-inline-block align-text-top */
+.logo {
+  display: inline-block;
+  text-align: top;
+  height: 2.4rem;
+  width: 2.4rem;
+  margin-bottom: 0.5rem;
+  /* color: #fe424d; */
+}
+.logo-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fa6469;
+  /* color: #fe424d; */
+  font-family: "Poppins", sans-serif;
+  margin-top: 1rem;
+}
+.nav-link {
+  color: #222222 !important;
+  font-size: 1.2rem !important;
+}
+.f-info-links a {
+  color: #222222 !important;
+  text-decoration: none;
+}
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+.f-info-links {
+  width: 100%;
+}
+.f-info-links,
+.f-info-social,
+.f-info-brand {
+  width: 100%;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.f-info-social i {
+  font-size: 1.3rem;
+  margin-right: 0.5rem;
+}
+.f-info {
+  height: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #ebebeb;
+  text-align: center;
+}
+.listing-card {
+  border: none !important;
+  margin-bottom: 1rem!important;
+}
+.card-img-top {
+  border-radius: 2rem !important;
+  width: 100%;
+  object-fit: cover;
+}
+.index-heading {
+   padding-left: 2rem !important;
+}
+.images {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+.card-body {
+  padding: 0 !important;
+}
+.card-text  {
+  font-weight: 400 !important;
+  margin-left:7px!important;
+}
+.listing-link {
+  text-decoration: none;
+}
+
+/* Card Effect */
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+/* New Page */
+.add-btn {
+  background-color: #fa6469 !important;
+  border: none !important;
+}
+/* Edit Page */
+.edit-btn {
+  background-color: #fa6469 !important;
+  border: none !important;
+}
+/* Show Page */
+.show-img {
+ height:30vh!important;
+}
+
+.btns {
+  display: flex;
+}
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+.text {
+  word-spacing: 8px;
+  letter-spacing: 2px;
+}
+
+/* map */
+#map{
+  height: 400px;
+  width: 90vh;
+}
+.original-img{
+  width: 80vh;
+  height: 400px;
+}
